@@ -1,0 +1,598 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: clamp(1rem, 1rem, 2rem);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.sticky-nav ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+
+.website-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#check {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.navbar-upperHalf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home-button {
+  letter-spacing: 0.3rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.sticky-nav {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.menu-list {
+  display: flex;
+  width: 35rem;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.menu-list li a {
+  font-size: clamp(0.7rem, 0.8rem, 0.9rem);
+  font-weight: 400;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 79%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.mens-outerwear {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding-bottom: 2rem;
+}
+
+.mens-outerwear img {
+  min-width: 1400px;
+  height: 100%;
+}
+
+.clothing-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 4vh;
+  letter-spacing: 0.05rem;
+}
+
+.shop-now-button {
+  width: 10rem;
+  height: 2.5rem;
+  border: 0.14rem solid black;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  background-color: white;
+}
+
+.men-women-shirts {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  min-height: 27rem;
+  overflow-x: hidden;
+}
+.men-shirt-div,
+.women-shirt-div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.men-shirt-anchor,
+.women-shirt-anchor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.men-shirt-anchor img {
+  width: 1440px;
+  height: 320px;
+  position: absolute;
+  right: -20rem;
+}
+.women-shirt-anchor img {
+  width: 1440px;
+  height: 320px;
+  position: absolute;
+  right: -30rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4vh;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+.demo-only {
+  width: 10rem;
+  text-align: center;
+  height: 80%;
+  background-color: black;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1440px) {
+  .content-container {
+    width: 100%;
+  }
+
+  .mens-outerwear {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .mens-outerwear img {
+    min-width: 800px;
+    height: auto;
+  }
+  .men-women-shirts {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    min-height: 20rem;
+    overflow-x: hidden;
+  }
+  .men-shirt-anchor img {
+    width: 800px;
+    height: auto;
+    position: absolute;
+    right: -20rem;
+  }
+  .women-shirt-anchor img {
+    width: 800px;
+    height: auto;
+    position: absolute;
+    right: -18rem;
+  }
+  .hamburger {
+    display: contents;
+  }
+  .sticky-nav {
+    display: none;
+  }
+}
+
+/*  Page two mens outerwear   */
+
+.items-content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+}
+
+.item {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+}
+
+.item-image {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5rem;
+}
+.item-description {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 0.2;
+  font-weight: 500;
+  padding-bottom: 0.7rem;
+}
+.item-price {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .items-page .mens-outerwear img {
+    display: none;
+  }
+
+  .items-page .items-content {
+    margin: 0px;
+  }
+  .items-page .item {
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .items-page .item-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .items-page .item-description {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 0.2;
+    font-weight: 500;
+    padding-bottom: 0.7rem;
+  }
+  .items-page .item-price {
+    color: grey;
+    font-size: 0.8rem;
+  }
+}
+
+/*Page-3 item-details*/
+
+.item-details-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 4rem;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
+.item-details-image {
+  margin-right: 4rem;
+}
+.item-details-text {
+  margin-left: 2rem;
+}
+.drop-down-set {
+  margin-top: 1rem;
+  display: flex;
+
+  margin-bottom: 1rem;
+}
+.size-text {
+  display: inline;
+  color: grey;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+.dropdown-div {
+  border-top: 0.5rem solid grey;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+}
+.item-details-info {
+  margin-top: 2rem;
+  font-size: 0.01rem;
+  max-width: 25rem;
+  color: grey;
+  margin-left: 0px;
+}
+
+.item-details-text li {
+  font-size: 0.8rem;
+}
+.drop-down-text {
+  display: inline;
+  size: 0.8rem;
+  margin-right: 70%;
+}
+
+.add-item-button {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+  letter-spacing: 0.01rem;
+  line-height: 0.05rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.add-item-responsive-div {
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  background-color: #172c50;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 0.01rem;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  line-height: 0.05rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.arrow-button {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .drop-down-text {
+    margin-right: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .arrow-button {
+    display: flex;
+  }
+  .item-details-container {
+    flex-direction: column;
+  }
+
+  .item-details-image {
+    margin-right: 0;
+  }
+  .drop-down-text {
+    margin-right: 55vw;
+  }
+
+  .add-item-button {
+    display: none;
+  }
+  .add-item-responsive-div {
+    display: flex;
+  }
+}
+@media (max-width: 494px) {
+  .drop-down-text {
+    margin-right: 45vw;
+  }
+}
+
+/* Page 4- Order Page  */
+
+.cart-page .content-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 105vh;
+}
+.cart-item-div {
+  width: 65%;
+  min-width: 25rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: grey;
+  margin-top: 2rem;
+}
+
+.cart-item-div img {
+  width: 5rem;
+  height: auto;
+}
+
+.cart-item-div p {
+  font-size: 0.9rem;
+  color: grey;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.total-checkout-div {
+  margin-top: 2rem;
+  margin-left: 30%;
+}
+
+.checkout-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+  letter-spacing: 0.01rem;
+  line-height: 0.05rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkout-responsive-div {
+  width: 100vw;
+  height: 8vh;
+  color: white;
+  background-color: #172c50;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 0.01rem;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  line-height: 0.05rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.total-checkout-div p {
+  display: inline;
+  margin-right: 3rem;
+  font-size: 0.9rem;
+  color: grey;
+}
+@media (max-width: 800px) {
+  .cart-page .content-container {
+    width: 100%;
+  }
+  .cart-item-div {
+    min-width: 18rem;
+    flex-wrap: wrap;
+  }
+  .checkout-button {
+    display: none;
+  }
+  .checkout-responsive-div {
+    display: flex;
+  }
+  .cancel-button {
+    order: 0;
+  }
+}
+
+/* Page-5  Billing Page   */
+.checkout-container {
+  display: flex;
+  margin-top: 3rem;
+  width: 60%;
+  min-width: 40rem;
+  height: auto;
+  min-height: 100vh;
+}
+.checkout-page .content-container .account-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.checkout-page .content-container h2 {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.inputBox {
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: rgb(179, 179, 179);
+  padding-bottom: 0.5rem;
+}
+
+.state-province-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.checkout-label {
+  font-size: 0.8rem;
+}
+.select-country {
+  border: none;
+  background-color: white;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  margin-top: 1rem;
+}
+.addr-checkbox {
+  display: inline-block;
+}
+.new-address-details {
+  display: none;
+  flex-direction: column;
+}
+
+#addr-checkbox:checked + .checkout-label + .new-address-details {
+  display: flex;
+}
+
+.checkout-page .content-container .payment-method {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.checkout-item-summary span {
+  font-size: 0.8rem;
+  color: rgb(49, 49, 49);
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .checkout-container {
+    flex-direction: column;
+    min-width: 20rem;
+    width: 100%;
+    margin-left: 2rem;
+  }
+}
