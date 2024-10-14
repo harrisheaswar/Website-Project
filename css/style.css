@@ -10,9 +10,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.sticky-nav ul {
-  list-style-type: none;
-}
+
 img {
   width: 100%;
 }
@@ -181,25 +179,6 @@ img {
   margin-top: 1rem;
 }
 
-#check:checked + .menu-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  align-items: center;
-  width: 40%;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  transition: 0.4s ease;
-  z-index: 1;
-  top: 3rem;
-  background-color: white;
-}
-
-#check:checked + .menu-list li {
-  margin-top: 2rem;
-}
 @media (max-width: 1440px) {
   .content-container {
     width: 100%;
@@ -538,6 +517,13 @@ img {
   font-size: 0.9rem;
   color: grey;
 }
+.cart-page .menu-list {
+  display: none;
+}
+.checkout-page .menu-list {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .cart-page .content-container {
     width: 100%;
@@ -623,6 +609,9 @@ img {
   color: rgb(49, 49, 49);
   margin-bottom: 0.8rem;
 }
+.checkout-page .menu-list {
+  display: none;
+}
 
 @media (max-width: 800px) {
   .checkout-container {
@@ -631,4 +620,28 @@ img {
     width: 100%;
     margin-left: 2rem;
   }
+}
+
+/* Hamburger menu */
+#check:checked + .menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  height: 100vh;
+  left: 0;
+  transition: 1s ease;
+  z-index: 1;
+  top: 3rem;
+  background-color: white;
+  color: grey;
+}
+
+#check:checked + .menu-list li {
+  margin-top: 2rem;
+}
+#check:checked + .menu-list li a {
+  color: grey;
 }
