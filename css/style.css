@@ -39,6 +39,7 @@ img {
 }
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 .navbar-upperHalf {
   display: flex;
