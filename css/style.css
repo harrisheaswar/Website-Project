@@ -39,7 +39,6 @@ img {
 }
 .hamburger {
   display: none;
-  cursor: pointer;
 }
 .navbar-upperHalf {
   display: flex;
@@ -250,6 +249,7 @@ img {
   }
   .hamburger {
     display: contents;
+    cursor: pointer;
   }
 
   .menu-list {
