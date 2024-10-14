@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Home-SHOP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,26 +24,27 @@
   </head>
   <body class="homePage">
     <div class="website-container">
-      <header class="navbar-upperHalf">
-        <div class="menu-bar">
-          <input type="checkbox" id="check" />
-          <label for="check" class="hamburger"
-            ><i class="fas fa-bars"></i
-          ></label>
+      <header class="header-div">
+        <div class="navbar-upperHalf">
+          <div class="menu-bar">
+            <label for="check" class="hamburger"
+              ><i class="fas fa-bars"></i
+            ></label>
+          </div>
+          <div class="home-button">
+            <a href="index.html"> <h3>SHOP</h3></a>
+          </div>
+          <a href="cart-page.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
-        <div class="home-button">
-          <a href="homePage.html"> <h3>SHOP</h3></a>
-        </div>
-        <a href="cart-page.html"><i class="fas fa-shopping-cart"></i></a>
-      </header>
-      <div class="sticky-nav">
+        <input type="checkbox" id="check" class="hamburger-checkbox" />
         <ul class="menu-list">
           <li><a href="mens-outerwear.html">Men's Outerwear</a></li>
           <li><a href="mens-outerwear.html">Ladies Outerwear</a></li>
           <li><a href="mens-outerwear.html">Men's T-shirt</a></li>
           <li><a href="mens-outerwear.html">Ladies T-shirt</a></li>
         </ul>
-      </div>
+      </header>
+
       <div class="content-container">
         <!-- Mens outer wear.  -->
         <div class="mens-outerwear">
@@ -98,7 +99,7 @@
         </div>
       </div>
       <footer class="footer-container">
-        <p style="font-size: 1rem; color: grey">Made By Harrish</p>
+        <p style="font-size: 1rem; color: grey">Made By Polymer</p>
         <div class="demo-only">DEMO ONLY</div>
       </footer>
     </div>
