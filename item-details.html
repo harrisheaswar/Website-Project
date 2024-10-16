@@ -24,7 +24,7 @@
   </head>
   <body class="item-details-page">
     <div class="website-container">
-      <header class="header-div" style="margin-bottom: 0">
+      <header class="header-div">
         <div class="navbar-upperHalf">
           <a href="mens-outerwear.html">
             <label style="cursor: pointer"
@@ -36,6 +36,12 @@
           </div>
           <a href="cart-page.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
+        <ul class="menu-list">
+          <li><a href="mens-outerwear.html">Men's Outerwear</a></li>
+          <li><a href="womens-outerwear.html">Ladies Outerwear</a></li>
+          <li><a href="mens-tshirt.html">Men's T-shirt</a></li>
+          <li><a href="womens-tshirt.html">Ladies T-shirt</a></li>
+        </ul>
       </header>
       <div class="item-details-container">
         <div class="item-details-image">
@@ -48,7 +54,7 @@
           <p style="margin-bottom: 3rem; color: grey">$37.75</p>
           <hr />
           <div class="drop-down-set">
-            <p class="size-text" style="padding-right: 2.5rem">Size</p>
+            <label class="size-text" style="padding-right: 2.5rem">Size</label>
             <select
               style="
                 border: none;
@@ -65,9 +71,9 @@
             </select>
           </div>
 
-          <hr />
+          <hr id="hr-size" />
           <div class="drop-down-set">
-            <p class="size-text">Quantity</p>
+            <label class="size-text">Quantity</label>
             <select
               style="
                 border: none;
@@ -83,7 +89,7 @@
               <option value="3">3</option>
             </select>
           </div>
-          <hr />
+          <hr id="quant-hr" />
           <div class="item-details-info" style="font-size: 0.8rem">
             <p
               style="
