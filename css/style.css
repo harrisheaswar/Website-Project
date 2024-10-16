@@ -119,6 +119,11 @@ img {
   cursor: pointer;
 }
 
+.shop-now-button:hover {
+  background-color: black;
+  color: white;
+}
+
 .men-women-shirts {
   display: flex;
   width: 100%;
@@ -126,6 +131,7 @@ img {
   min-height: 27rem;
   overflow-x: hidden;
 }
+
 .men-shirt-div,
 .women-shirt-div {
   display: flex;
@@ -381,6 +387,13 @@ img {
   font-size: 0.9rem;
   cursor: pointer;
 }
+.add-item-button:hover {
+  color: white;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 
 .add-item-responsive-div {
   width: 100vw;
@@ -587,6 +600,7 @@ img {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgb(167, 167, 167);
   margin-top: 1rem;
+  outline: none;
 }
 .addr-checkbox {
   display: inline-block;
@@ -646,6 +660,7 @@ img {
 }
 #check:checked + .menu-list li a {
   color: grey;
+  padding-bottom: 1rem;
 }
 
 #check:checked + .hamburger {
