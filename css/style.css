@@ -69,6 +69,7 @@ img {
   list-style-type: none;
   position: absolute;
   top: 3.8rem;
+  z-index: 20;
 }
 
 .menu-list li a {
@@ -76,10 +77,12 @@ img {
   font-weight: 400;
   margin-right: 2rem;
   transition: 0.2s ease;
+  z-index: 20;
 }
 
 .menu-list li a .active {
   border-bottom: 0.2rem;
+  z-index: 20;
 }
 
 .content-container {
@@ -90,8 +93,18 @@ img {
   width: 79%;
   height: auto;
   overflow-x: hidden;
+  z-index: 0;
 }
+.overlay {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
 
+  background-color: rgba(0, 0, 0, 0.568);
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
 .mens-outerwear {
   display: flex;
   flex-direction: column;
@@ -308,7 +321,7 @@ img {
   .items-page .item-image {
     width: 90%;
     height: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
   .items-page .item-description {
     width: 100%;
@@ -466,13 +479,22 @@ img {
   height: 105vh;
   margin-top: 3rem;
 }
+.inner-style {
+  display: flex;
+  order: 2;
+  justify-content: space-around;
+  text-align: center;
+  width: 40vw;
+  margin-right: 5rem;
+}
 .cart-item-div {
   width: 70%;
-  min-width: 25rem;
+
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   font-size: 0.9rem;
   color: grey;
   margin-top: 2rem;
@@ -482,7 +504,7 @@ img {
   display: flex;
   order: 3;
   justify-content: space-between;
-  width: 20rem;
+  width: 20vw;
 }
 
 .cart-item-div img {
@@ -553,14 +575,32 @@ img {
 .cancel-button {
   order: 4;
 }
+.item-name-cart {
+  margin-top: 0.3rem;
+  color: black;
+  min-width: 10rem;
+  margin-bottom: 0.2rem;
+  margin-right: 5rem;
+  display: block;
+}
+.cart-item-image {
+  order: 1;
+  padding-left: 2rem;
+}
 
+@media (max-width: 1000x) {
+  .item-name-cart {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
 @media (max-width: 800px) {
   .cart-page .content-container {
     width: 100%;
   }
   .cart-item-div {
-    min-width: 21rem;
-    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
   }
   .checkout-button {
     display: none;
@@ -569,26 +609,66 @@ img {
     display: flex;
   }
   .cancel-button {
-    order: 2;
+    order: 3;
+  }
+  .inner-style {
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-right: 5rem;
+    margin-top: 1rem;
   }
   .cart-item-details {
     width: auto;
-    margin-left: 5rem;
   }
   .cart-page .content-container {
     margin-top: 1rem;
   }
+  .item-name-cart {
+    margin-top: 0.3rem;
+    color: black;
+    min-width: 10rem;
+    margin-bottom: 1rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .cart-item-image {
+    order: 1;
+    padding-right: 2rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 @media (max-width: 450px) {
   .cart-item-details {
+    flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-left: 5rem;
+    font-size: 0.8rem;
+  }
+  .cart-item-div {
+    width: 100%;
+    justify-content: space-around;
   }
   .cart-quantity {
     margin-left: 1rem;
+  }
+  .inner-style {
+    margin-right: 4rem;
+  }
+
+  .cart-item-image {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .item-name-cart {
+    margin-top: 0.3rem;
+    color: black;
+    min-width: 13rem;
+    margin-bottom: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -619,6 +699,7 @@ img {
   margin-bottom: 1.5rem;
   font-size: rgb(179, 179, 179);
   padding-bottom: 0.5rem;
+  outline: none;
 }
 
 .state-province-div {

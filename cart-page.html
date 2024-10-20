@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="cart-page">
+    <div class="overlay"></div>
     <div class="website-container">
       <header class="header-div" style="margin-bottom: 0">
         <div class="navbar-upperHalf">
@@ -44,38 +45,46 @@
           <li><a href="mens-outerwear.html">Ladies T-shirt</a></li>
         </ul>
       </header>
+
       <div class="content-container">
         <h1 style="font-weight: 400; margin-bottom: 1rem">Your Cart</h1>
         <p style="font-size: 0.8rem; color: grey">(4 items)</p>
         <div class="cart-item-div">
-          <a href="item-details.html" style="order: 1">
+          <a href="item-details.html" class="cart-item-image">
             <img src="images/cart-images/1.jpg"
           /></a>
-          <a href="item-details.html" style="order: 2"
-            ><p style="margin-left: 1rem; color: black">
-              Grey Heather Fleece Zip Hoodie
-            </p></a
-          >
+          <div class="inner-style">
+            <a
+              href="item-details.html"
+              class="item-name-cart"
+              style="color: black"
+              ><p style="color: black">Grey Heather Fleece Zip Hoodie</p></a
+            >
 
-          <div class="cart-item-details">
-            <div class="cart-quantity">
-              <label style="font-size: 1rem" for="quantity">Qty:</label>
-              <select
-                style="border: none; background-color: white; outline: none"
-                name="quant"
-                id="quantity"
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+            <div class="cart-item-details">
+              <div class="cart-quantity">
+                <label style="font-size: 1rem" for="quantity">Qty:</label>
+                <select
+                  style="border: none; background-color: white; outline: none"
+                  name="quant"
+                  id="quantity"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <p>Size: M</p>
+              <p>$38.85</p>
             </div>
-
-            <p>Size: M</p>
-            <p>$38.85</p>
           </div>
+
           <a class="cancel-button" href="#"
-            ><i class="fas fa-times" style="font-size: 1rem; color: grey"></i
+            ><i
+              class="fas fa-times"
+              style="font-size: 1rem; color: grey; margin-right: 1rem"
+            ></i
           ></a>
         </div>
 

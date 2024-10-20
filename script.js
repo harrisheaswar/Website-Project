@@ -3,9 +3,27 @@ const sizeSelector = document.querySelector("#size");
 const quantSelector = document.querySelector("#quantity");
 const menuSelector = document.querySelectorAll(".header-div .menu-list li a");
 const checkBox = document.querySelector("#check");
-const inputBox = document.querySelector(".inputBox");
+const inputBox = document.querySelectorAll(".inputBox");
+let overlay = document.querySelector(".overlay");
 // highlight the hr line when select button pressed
 const websiteSelector = document.querySelector(".website-container");
+window.addEventListener("resize", () => {
+  let windowSize = window.innerWidth;
+
+  if (windowSize > 800) {
+    checkBox.checked = false;
+    overlay.style.display = "none";
+  }
+});
+inputBox.forEach((link) =>
+  link.addEventListener("focus", (e) => {
+    let input = e.target;
+    input.nextElementSibling.style.display = "flex";
+    input.placeholder = "";
+
+    input.style.borderBottom = " 2px solid black";
+  })
+);
 
 window.addEventListener("DOMContentLoaded", (e) => {
   let currLink = window.location.pathname;
@@ -53,11 +71,9 @@ checkBox.addEventListener("change", () => {
         element.style.color = "black";
       }
     });
+    overlay.style.display = "block";
+    overlay.style.zIndex = "5";
+  } else {
+    overlay.style.display = "none";
   }
-});
-
-inputBox.addEventListener("keydown", (e) => {
-  let input = e.target;
-
-  input.style.borderBottom = " 4px solid black";
 });

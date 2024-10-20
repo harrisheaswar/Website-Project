@@ -45,6 +45,7 @@
         </ul>
       </header>
       <div class="content-container" style="margin-top: 3.5rem">
+        <div class="overlay"></div>
         <h1 style="font-weight: 400; margin-bottom: 1rem">Checkout</h1>
         <p style="font-size: 0.8rem; color: grey">
           Shop is a demo app - form data will not be sent
@@ -52,15 +53,56 @@
         <div class="checkout-container">
           <div class="account-details">
             <h2>Account Information</h2>
+
             <input class="inputBox" type="text" placeholder="Email" />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 3rem;
+              "
+            >
+              Email
+            </p>
             <input class="inputBox" type="text" placeholder="Phone Number" />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 8rem;
+              "
+            >
+              Phone Number
+            </p>
             <h2>shipping Address</h2>
             <input
               class="inputBox"
               type="text"
               placeholder="Shipping Address"
             />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 15rem;
+              "
+            >
+              Shipping Address
+            </p>
             <input class="inputBox" type="text" placeholder="City" />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 20rem;
+              "
+            >
+              City
+            </p>
             <div class="state-province-div">
               <input
                 class="inputBox"
@@ -118,7 +160,27 @@
           <div class="payment-method">
             <h2>Payment Method</h2>
             <input class="inputBox" type="text" placeholder="Cardholder Name" />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 3rem;
+              "
+            >
+              Cardholder Name
+            </p>
             <input class="inputBox" type="text" placeholder="Card Number" />
+            <p
+              style="
+                display: none;
+                font-size: 0.8rem;
+                position: absolute;
+                margin-top: 8rem;
+              "
+            >
+              Card Number
+            </p>
             <label class="checkout-label" for="Country">Expiry</label>
             <div
               style="display: flex; width: 100%; justify-content: space-between"
